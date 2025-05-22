@@ -37,7 +37,7 @@ const Photo = () => {
           borderColor={useColorModeValue('gray.200', 'gray.700')}
         >
           <Image
-            src="https://raw.githubusercontent.com/Nishanth0513/portfolio/main/public/images/profile.jpg"
+            src="https://raw.githubusercontent.com/Nishanth0513/portfolio/main/public/images/profile.JPG"
             alt="G NISHANTH REDDY"
             objectFit="cover"
             w="100%"
