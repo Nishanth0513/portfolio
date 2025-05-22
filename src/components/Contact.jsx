@@ -42,8 +42,12 @@ const Contact = () => {
           </VStack>
         </Box>
         <HStack spacing={6}>
+        <a href="https://github.com/Nishanth0513" target="_blank" rel="noopener noreferrer">
           <Icon as={FaGithub} w={6} h={6} cursor="pointer" />
-          <Icon as={FaLinkedin} w={6} h={6} cursor="pointer" />
+        </a>
+          <a href="https://www.linkedin.com/in/g-nishanthreddy" target="_blank" rel="noopener noreferrer">
+            <Icon as={FaLinkedin} w={6} h={6} cursor="pointer" />
+          </a>
           <Icon as={FaTwitter} w={6} h={6} cursor="pointer" />
         </HStack>
       </VStack>
