@@ -7,28 +7,29 @@ const Hero = () => {
   return (
     <Box
       as="section"
-      pt={32}
-      pb={20}
+      pt={{ base: 24, md: 32 }}
+      pb={{ base: 10, md: 20 }}
+      px={{ base: 4, md: 0 }}
       bg={bgColor}
       textAlign="center"
     >
-      <VStack spacing={6}>
+      <VStack spacing={{ base: 4, md: 6 }}>
         <Heading
           as="h1"
-          size="2xl"
+          fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }}
           bgGradient="linear(to-r, blue.400, teal.400)"
           bgClip="text"
           fontWeight="extrabold"
         >
           Hi, I'm G NISHANTH REDDY
         </Heading>
-        <Text fontSize="xl" color={textColor} maxW="2xl">
+        <Text fontSize={{ base: 'md', md: 'xl' }} color={textColor} maxW="2xl" mx="auto">
           A passionate full-stack developer crafting beautiful and functional web experiences.
           I love turning complex problems into simple, beautiful, and intuitive solutions.
         </Text>
         <Button
           colorScheme="blue"
-          size="lg"
+          size={{ base: 'md', md: 'lg' }}
           onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Get in Touch

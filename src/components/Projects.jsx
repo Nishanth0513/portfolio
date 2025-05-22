@@ -36,7 +36,8 @@ const Projects = () => {
     <Box
       as="section"
       id="projects"
-      py={20}
+      py={{ base: 10, md: 20 }}
+      px={{ base: 4, md: 0 }}
       bg={bgColor}
     >
       <VStack spacing={8} align="stretch">
@@ -46,9 +47,8 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Heading textAlign="center" mb={8}>Projects</Heading>
+          <Heading textAlign="center" mb={8} fontSize={{ base: '2xl', md: '3xl' }}>Projects</Heading>
         </MotionBox>
-
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
           {projects.map((project, index) => (
             <MotionBox
@@ -63,24 +63,22 @@ const Projects = () => {
                 rounded="lg"
                 overflow="hidden"
                 boxShadow="lg"
-                p={6}
+                p={{ base: 4, md: 6 }}
                 transition="transform 0.3s ease"
                 _hover={{ transform: 'translateY(-5px)' }}
                 height="100%"
               >
-                <Box display="flex" alignItems="center" mb={4}>
+                <Box display="flex" flexDirection={{ base: 'column', sm: 'row' }} alignItems={{ base: 'flex-start', sm: 'center' }} mb={4} gap={2}>
                   <Box as={project.icon} w={8} h={8} mr={3} />
                   <Heading size="lg">{project.title}</Heading>
                 </Box>
-                
                 <VStack align="stretch" spacing={4} mb={6}>
                   {project.description.map((point, pointIndex) => (
-                    <Text key={pointIndex} color={textColor}>
+                    <Text key={pointIndex} color={textColor} fontSize={{ base: 'sm', md: 'md' }}>
                       {point}
                     </Text>
                   ))}
                 </VStack>
-
                 <Box>
                   <Text fontWeight="bold" mb={2}>Technologies Used:</Text>
                   <Box display="flex" gap={2} flexWrap="wrap">

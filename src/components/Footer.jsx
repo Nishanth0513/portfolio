@@ -7,11 +7,12 @@ const Footer = () => {
   return (
     <Box
       as="footer"
-      py={6}
+      py={{ base: 4, md: 6 }}
+      px={{ base: 2, md: 0 }}
       bg={bgColor}
       textAlign="center"
     >
-      <Text color={textColor}>
+      <Text color={textColor} fontSize={{ base: 'sm', md: 'md' }}>
         © {new Date().getFullYear()} G NISHANTH REDDY All rights reserved.
       </Text>
     </Box>

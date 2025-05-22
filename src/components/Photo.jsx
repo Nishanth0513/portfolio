@@ -9,7 +9,8 @@ const Photo = () => {
   return (
     <Box
       as="section"
-      py={20}
+      py={{ base: 10, md: 20 }}
+      px={{ base: 4, md: 0 }}
       bg={bgColor}
       display="flex"
       justifyContent="center"
@@ -29,7 +30,7 @@ const Photo = () => {
         }}
       >
         <Box
-          maxW="400px"
+          maxW={{ base: "200px", md: "300px", lg: "400px" }}
           borderRadius="full"
           overflow="hidden"
           boxShadow="2xl"
@@ -41,7 +42,7 @@ const Photo = () => {
             alt="G NISHANTH REDDY"
             objectFit="cover"
             w="100%"
-            h="100%"
+            h={{ base: "200px", md: "300px", lg: "400px" }}
             fallbackSrc="https://via.placeholder.com/400x400?text=G+NISHANTH+REDDY"
             onError={(e) => {
               e.target.onerror = null;

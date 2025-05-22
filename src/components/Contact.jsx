@@ -9,15 +9,16 @@ const Contact = () => {
     <Box
       as="section"
       id="contact"
-      py={20}
+      py={{ base: 10, md: 20 }}
+      px={{ base: 4, md: 0 }}
       bg={bgColor}
     >
       <VStack spacing={8} maxW="container.md" mx="auto">
-        <Heading>Get in Touch</Heading>
+        <Heading fontSize={{ base: '2xl', md: '3xl' }}>Get in Touch</Heading>
         <Box
           as="form"
           w="full"
-          p={8}
+          p={{ base: 4, md: 8 }}
           borderWidth="1px"
           borderColor={borderColor}
           rounded="lg"
@@ -25,28 +26,28 @@ const Contact = () => {
         >
           <VStack spacing={4}>
             <FormControl isRequired>
-              <FormLabel>Name</FormLabel>
-              <Input type="text" placeholder="Your name" />
+              <FormLabel fontSize={{ base: 'sm', md: 'md' }}>Name</FormLabel>
+              <Input type="text" placeholder="Your name" fontSize={{ base: 'sm', md: 'md' }} />
             </FormControl>
             <FormControl isRequired>
-              <FormLabel>Email</FormLabel>
-              <Input type="email" placeholder="your.email@example.com" />
+              <FormLabel fontSize={{ base: 'sm', md: 'md' }}>Email</FormLabel>
+              <Input type="email" placeholder="your.email@example.com" fontSize={{ base: 'sm', md: 'md' }} />
             </FormControl>
             <FormControl isRequired>
-              <FormLabel>Message</FormLabel>
-              <Textarea placeholder="Your message" rows={6} />
+              <FormLabel fontSize={{ base: 'sm', md: 'md' }}>Message</FormLabel>
+              <Textarea placeholder="Your message" rows={6} fontSize={{ base: 'sm', md: 'md' }} />
             </FormControl>
-            <Button type="submit" colorScheme="blue" size="lg" w="full">
+            <Button type="submit" colorScheme="blue" size={{ base: 'md', md: 'lg' }} w="full">
               Send Message
             </Button>
           </VStack>
         </Box>
-        <HStack spacing={6}>
-        <a href="https://github.com/Nishanth0513" target="_blank" rel="noopener noreferrer">
-          <Icon as={FaGithub} w={6} h={6} cursor="pointer" />
-        </a>
+        <HStack spacing={6} flexWrap="wrap" justify="center">
+          <a href="https://github.com/Nishanth0513" target="_blank" rel="noopener noreferrer">
+            <Icon as={FaGithub} w={{ base: 5, md: 6 }} h={{ base: 5, md: 6 }} cursor="pointer" />
+          </a>
           <a href="https://www.linkedin.com/in/g-nishanthreddy" target="_blank" rel="noopener noreferrer">
-            <Icon as={FaLinkedin} w={6} h={6} cursor="pointer" />
+            <Icon as={FaLinkedin} w={{ base: 5, md: 6 }} h={{ base: 5, md: 6 }} cursor="pointer" />
           </a>
         </HStack>
       </VStack>
