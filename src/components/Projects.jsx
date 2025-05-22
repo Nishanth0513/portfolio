@@ -14,19 +14,19 @@ const Projects = () => {
       title: 'EZ-TOLL',
       icon: FaTrafficLight,
       description: [
-        'Developed a traffic management system that prioritizes emergency vehicles and optimizes toll calculations using C programming, Merge Sort, and Dijkstra\'s algorithm.',
-        'Integrated Dijkstra\'s algorithm to determine the most efficient path for traffic movement. Assigned priority levels to vehicles (e.g., ambulances, fire trucks) for efficient lane distribution.',
-        'Designed a lane assignment model to distribute vehicles strategically.'
+        "Developed a traffic management system that prioritizes emergency vehicles and optimizes toll calculations using C programming, Merge Sort, and Dijkstra's algorithm.",
+        "Integrated Dijkstra's algorithm to determine the most efficient path for traffic movement. Assigned priority levels to vehicles (e.g., ambulances, fire trucks) for efficient lane distribution.",
+        "Designed a lane assignment model to distribute vehicles strategically."
       ],
-      technologies: ['C', 'Data Structures & Algorithms', 'Graph Theory', 'Merge Sort', 'Dijkstra\'s Algorithm']
+      technologies: ['C', 'Data Structures & Algorithms', 'Graph Theory', 'Merge Sort', "Dijkstra's Algorithm"]
     },
     {
       title: 'FarmFlow',
       icon: FaShoppingCart,
       description: [
-        'Developed an online marketplace that enables farmers to sell milk and livestock products directly to consumers, eliminating intermediaries and ensuring fair pricing.',
-        'Designed a farmer-friendly registration system that enables dairy producers to sign up and showcase their products.',
-        'Integrated a seamless e-commerce module allowing users to browse, purchase, and securely pay for fresh milk and livestock goods. Implemented fair trade policies ensuring farmers receive direct payments, promoting sustainable agriculture and eliminating intermediaries.'
+        "Developed an online marketplace that enables farmers to sell milk and livestock products directly to consumers, eliminating intermediaries and ensuring fair pricing.",
+        "Designed a farmer-friendly registration system that enables dairy producers to sign up and showcase their products.",
+        "Integrated a seamless e-commerce module allowing users to browse, purchase, and securely pay for fresh milk and livestock goods. Implemented fair trade policies ensuring farmers receive direct payments, promoting sustainable agriculture and eliminating intermediaries."
       ],
       technologies: ['Web Development', 'E-commerce', 'User Authentication', 'Payment Integration', 'Database Management']
     }

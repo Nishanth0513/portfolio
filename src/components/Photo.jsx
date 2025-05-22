@@ -37,11 +37,16 @@ const Photo = () => {
           borderColor={useColorModeValue('gray.200', 'gray.700')}
         >
           <Image
-            src="/src/assets/profile.JPG" 
+            src="https://raw.githubusercontent.com/Nishanth0513/portfolio/main/public/images/profile.jpg"
             alt="G NISHANTH REDDY"
             objectFit="cover"
             w="100%"
             h="100%"
+            fallbackSrc="https://via.placeholder.com/400x400?text=G+NISHANTH+REDDY"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = "https://via.placeholder.com/400x400?text=G+NISHANTH+REDDY";
+            }}
           />
         </Box>
       </MotionBox>
