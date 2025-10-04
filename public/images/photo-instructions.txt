@@ -1,0 +1,18 @@
+PHOTO SETUP INSTRUCTIONS
+========================
+
+To add your photo to the portfolio:
+
+1. SAVE YOUR PHOTO AS: nishanth-reddy.jpg
+2. PLACE IT IN: public/images/ folder
+3. RECOMMENDED SIZE: 400x400 pixels or larger
+4. FORMAT: JPG, PNG, or WebP
+
+The photo will appear in:
+- About section modal (large, 120px diameter)
+- Game world header (small, 60px diameter)
+- Terminal welcome message (icon only)
+
+If no photo is found, placeholder icons will be shown instead.
+
+CURRENT STATUS: Waiting for photo to be added
